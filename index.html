@@ -1,30 +1,788 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Meu Presencial</title>
-<link rel="stylesheet" href="css/styles.css">
-</head><body>
-<header class="header">
-<div><h2>Meu Presencial</h2><p>Boa noite, Priscila 👋</p></div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Presencial</title>
+
+    <meta
+        name="theme-color"
+        content="#0B2E59">
+
+    <link
+        rel="manifest"
+        href="manifest.json">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="topbar">
+
+    <div class="profile">
+
+        <div class="avatar">
+
+            <img
+                src="assets/avatar.svg"
+                alt="Avatar">
+
+        </div>
+
+        <div>
+
+            <span class="hello">
+
+                Boa tarde,
+
+            </span>
+
+            <h2>
+
+                Priscila
+
+            </h2>
+
+            <small>
+
+                Junho de 2026
+
+            </small>
+
+        </div>
+
+    </div>
+
+    <div class="header-icons">
+
+        <button>
+
+            <span class="material-symbols-outlined">
+
+                search
+
+            </span>
+
+        </button>
+
+        <button>
+
+            <span class="material-symbols-outlined">
+
+                notifications
+
+            </span>
+
+        </button>
+
+    </div>
+
 </header>
-<main class="container">
-<section class="card hero">
-<div><h3>Meta do mês</h3><h1 id="meta">6/8</h1><p id="texto">Faltam 2 dias</p></div>
-<div class="actions">
-<button onclick="registrar('P')">🏢 Presencial</button>
-<button class="secondary" onclick="registrar('H')">🏠 Home Office</button>
-</div>
+
+<main>
+
+<section class="hero-card">
+
+    <div class="hero-left">
+
+        <h3>
+
+            Meta do mês
+
+        </h3>
+
+        <div class="progress-circle">
+
+            <div class="progress-value">
+
+                <span id="diasMeta">
+
+                    6 / 8
+
+                </span>
+
+                <small>
+
+                    dias
+
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <div class="status success">
+
+            No ritmo
+
+        </div>
+
+        <h1>
+
+            75%
+
+        </h1>
+
+        <p>
+
+            Restam apenas
+            <strong>2 dias presenciais</strong>
+
+        </p>
+
+    </div>
+
+</section><section class="action-card">
+
+    <div class="section-title">
+
+        <span class="material-symbols-outlined">
+
+            edit_calendar
+
+        </span>
+
+        <h3>
+
+            Como você trabalhou hoje?
+
+        </h3>
+
+    </div>
+
+    <div class="action-grid">
+
+        <button class="action presencial">
+
+            <span class="material-symbols-outlined">
+
+                apartment
+
+            </span>
+
+            <span>
+
+                Presencial
+
+            </span>
+
+        </button>
+
+        <button class="action home">
+
+            <span class="material-symbols-outlined">
+
+                home
+
+            </span>
+
+            <span>
+
+                Home Office
+
+            </span>
+
+        </button>
+
+        <button class="action ferias">
+
+            <span class="material-symbols-outlined">
+
+                beach_access
+
+            </span>
+
+            <span>
+
+                Férias
+
+            </span>
+
+        </button>
+
+        <button class="action feriado">
+
+            <span class="material-symbols-outlined">
+
+                celebration
+
+            </span>
+
+            <span>
+
+                Feriado
+
+            </span>
+
+        </button>
+
+        <button class="action folga">
+
+            <span class="material-symbols-outlined">
+
+                hotel
+
+            </span>
+
+            <span>
+
+                Folga
+
+            </span>
+
+        </button>
+
+    </div>
+
 </section>
 
-<section class="grid">
-<div class="card"><h4>📅 Minha Agenda</h4><p>Hoje: Home Office</p><p>Amanhã: Presencial</p></div>
-<div class="card"><h4>📊 Resumo</h4><p>🏢 6</p><p>🏠 8</p><p>🌴 2</p><p>🎉 1</p><p>😴 4</p></div>
+<section class="agenda-card">
+
+    <div class="section-title">
+
+        <span class="material-symbols-outlined">
+
+            event
+
+        </span>
+
+        <h3>
+
+            Minha Agenda
+
+        </h3>
+
+    </div>
+
+    <div class="agenda-list">
+
+        <div class="agenda-item">
+
+            <div>
+
+                <strong>
+
+                    Hoje
+
+                </strong>
+
+                <small>
+
+                    Segunda-feira
+
+                </small>
+
+            </div>
+
+            <span class="badge home">
+
+                Home Office
+
+            </span>
+
+        </div>
+
+        <div class="agenda-item">
+
+            <div>
+
+                <strong>
+
+                    Amanhã
+
+                </strong>
+
+                <small>
+
+                    Terça-feira
+
+                </small>
+
+            </div>
+
+            <span class="badge presencial">
+
+                Presencial
+
+            </span>
+
+        </div>
+
+        <div class="agenda-item">
+
+            <div>
+
+                <strong>
+
+                    Sexta-feira
+
+                </strong>
+
+                <small>
+
+                    Feriado Nacional
+
+                </small>
+
+            </div>
+
+            <span class="badge holiday">
+
+                Feriado
+
+            </span>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section class="card">
-<h4>Últimos registros</h4>
-<ul id="hist"></ul>
+<section class="summary-card">
+
+    <div class="section-title">
+
+        <span class="material-symbols-outlined">
+
+            dashboard
+
+        </span>
+
+        <h3>
+
+            Resumo do mês
+
+        </h3>
+
+    </div>
+
+    <div class="summary-grid">
+
+        <div class="summary-item">
+
+            <h4>🏢</h4>
+
+            <span>6</span>
+
+            <small>Presencial</small>
+
+        </div>
+
+        <div class="summary-item">
+
+            <h4>🏠</h4>
+
+            <span>8</span>
+
+            <small>Home Office</small>
+
+        </div>
+
+        <div class="summary-item">
+
+            <h4>🌴</h4>
+
+            <span>2</span>
+
+            <small>Férias</small>
+
+        </div>
+
+        <div class="summary-item">
+
+            <h4>🎉</h4>
+
+            <span>1</span>
+
+            <small>Feriados</small>
+
+        </div>
+
+        <div class="summary-item">
+
+            <h4>😴</h4>
+
+            <span>4</span>
+
+            <small>Folgas</small>
+
+        </div>
+
+    </div>
+
 </section>
+  
+<section class="timeline-card">
+
+    <div class="section-title">
+
+        <span class="material-symbols-outlined">
+
+            timeline
+
+        </span>
+
+        <h3>
+
+            Linha do Tempo
+
+        </h3>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="day presencial">
+            <small>01</small>
+            <span>🏢</span>
+        </div>
+
+        <div class="day home">
+            <small>02</small>
+            <span>🏠</span>
+        </div>
+
+        <div class="day presencial">
+            <small>03</small>
+            <span>🏢</span>
+        </div>
+
+        <div class="day holiday">
+            <small>04</small>
+            <span>🎉</span>
+        </div>
+
+        <div class="day off">
+            <small>05</small>
+            <span>😴</span>
+        </div>
+
+        <div class="day off">
+            <small>06</small>
+            <span>😴</span>
+        </div>
+
+        <div class="day home">
+            <small>07</small>
+            <span>🏠</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="insight-card">
+
+    <div class="section-title">
+
+        <span class="material-symbols-outlined">
+
+            lightbulb
+
+        </span>
+
+        <h3>
+
+            Insight
+
+        </h3>
+
+    </div>
+
+    <div class="insight success">
+
+        <h4>
+
+            Você está no ritmo certo.
+
+        </h4>
+
+        <p>
+
+            Restam apenas <strong>2 dias presenciais</strong> para atingir sua meta.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="history-card">
+
+    <div class="section-title">
+
+        <span class="material-symbols-outlined">
+
+            history
+
+        </span>
+
+        <h3>
+
+            Últimos registros
+
+        </h3>
+
+    </div>
+
+    <div id="historyList">
+
+        <div class="history-item">
+
+            <div>
+
+                <strong>
+
+                    🏠 Home Office
+
+                </strong>
+
+                <small>
+
+                    Hoje • 08:32
+
+                </small>
+
+            </div>
+
+        </div>
+
+        <div class="history-item">
+
+            <div>
+
+                <strong>
+
+                    🏢 Presencial
+
+                </strong>
+
+                <small>
+
+                    Ontem • 08:11
+
+                </small>
+
+            </div>
+
+        </div>
+
+        <div class="history-item">
+
+            <div>
+
+                <strong>
+
+                    🎉 Feriado
+
+                </strong>
+
+                <small>
+
+                    Sexta-feira
+
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 </main>
-<nav><a>🏠</a><a>📅</a><a>📊</a><a>👤</a></nav>
+
+<nav class="bottom-nav">
+
+    <button class="active">
+
+        <span class="material-symbols-outlined">
+
+            home
+
+        </span>
+
+        <small>Início</small>
+
+    </button>
+
+    <button>
+
+        <span class="material-symbols-outlined">
+
+            calendar_month
+
+        </span>
+
+        <small>Calendário</small>
+
+    </button>
+
+    <button>
+
+        <span class="material-symbols-outlined">
+
+            bar_chart
+
+        </span>
+
+        <small>Estatísticas</small>
+
+    </button>
+
+    <button>
+
+        <span class="material-symbols-outlined">
+
+            history
+
+        </span>
+
+        <small>Histórico</small>
+
+    </button>
+
+    <button>
+
+        <span class="material-symbols-outlined">
+
+            person
+
+        </span>
+
+        <small>Perfil</small>
+
+    </button>
+
+</nav>
+<div id="dayModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h3>
+
+                Registrar Dia
+
+            </h3>
+
+            <button id="closeModal">
+
+                <span class="material-symbols-outlined">
+
+                    close
+
+                </span>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <p>
+
+                Como foi seu dia?
+
+            </p>
+
+            <div class="modal-actions">
+
+                <button class="modal-option presencial">
+
+                    🏢 Presencial
+
+                </button>
+
+                <button class="modal-option home">
+
+                    🏠 Home Office
+
+                </button>
+
+                <button class="modal-option ferias">
+
+                    🌴 Férias
+
+                </button>
+
+                <button class="modal-option holiday">
+
+                    🎉 Feriado
+
+                </button>
+
+                <button class="modal-option off">
+
+                    😴 Folga
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="toast" class="toast hidden">
+
+    Registro salvo com sucesso.
+
+</div>
+
+<script src="js/storage.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/calendar.js"></script>
+
+<script src="js/statistics.js"></script>
+
+<script src="js/router.js"></script>
+
+<script src="js/utils.js"></script>
+
 <script src="js/app.js"></script>
-</body></html>
+
+</div>
+
+</body>
+
+</html>
